@@ -12,6 +12,14 @@ finish-args:
   - --socket=wayland
   # Needs to talk to the network:
   - --share=network
+  # Audio
+  - --socket=pulseaudio
+  # GPU
+  - --device=dri
+  # Persist dir
+  - --persist=.catangens-minecraft
+  # Open files (NOT WORK)
+  - --talk-name=org.freedesktop.portal.FileChooser.OpenFile
 modules:
   - name: Catangens
     buildsystem: simple
